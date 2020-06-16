@@ -1,0 +1,35 @@
+{
+  "name": "RandomBot",
+  "version": "1.0.0",
+  "description": "A bot to do things",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "nodemon -e ts -w ./src -x npm run watch:serve",
+    "watch:serve": "node -r ts-node/register --inspect src/index.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "Callum",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bent": "^7.3.4",
+    "bottlejs": "^1.7.2",
+    "cheerio": "^1.0.0-rc.3",
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.15",
+    "@types/dotenv": "^6.1.1",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.4"
+  }
+}

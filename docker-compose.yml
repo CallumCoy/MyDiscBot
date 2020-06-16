@@ -1,0 +1,7 @@
+version: '3'
+services:
+  ani:
+    build: .
+    env_file:
+     - .env
+
